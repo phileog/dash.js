@@ -233,8 +233,11 @@ module.exports = function (grunt) {
             }
         },
         githooks: {
+            options: {
+                dest: '../../.git/modules/vendor/dash.js/hooks',
+            },
             all: {
-                'pre-commit': 'lint'
+                'pre-commit': 'lint',
             }
         }
     });
